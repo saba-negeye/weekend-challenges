@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0px;
+    padding: 20px;
+}
+.main-container {
+    display: flex;               /* Flex container for layout */
+    justify-content: space-between; /* Space between left and right containers */
+    width: 100%;                 /* Ensure full width */
+    margin: 0; 
+    align-items: stretch;
+}
+
+.left-container, .right-container {
+    width: 50%;                  /* Each takes up half of the page */
+    padding: 10px;  /* Remove default padding */
+    height:auto;
+    display: flex;
+    flex-direction: column;  
+}
+   
+.profile-header {                         
+    display: flex; 
+    width:100%;                          /* Vertically align items in the left */
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.profile-img img {
+    width: 200px;                   /* Fixed width for the image */
+    height: auto;                   
+    border-radius: 100%;            /* Make the image circular */
+    margin: 10px;        
+}
+
+.header-text {
+    margin-left: 20px;              /* Add space between the image and the rest of the header */
+    margin-bottom: 0;
+}
+.skills, .education, .experience {
+    flex-grow: 1;                      /* Allow these sections to grow */
+    margin-bottom: 10px;                /* Add margin to separate sections */
+    background-color: lightblue;             
+    width: 100%;
+    border-radius: 10px
+}
+.section-title{
+    font-weight: bold;
+    font-style:italic;
+    margin-top: 0;
+    margin-left:10px; /* moves the text to the right so it doesnt start at the edge of container*/
+
+}
+
+.job-title{
+    font-weight:bold; 
+    margin-top: 0;     /* Remove vertical space between job title and job duation */
+    margin-bottom: 0;  /* Remove bottom margin */
+    margin-left: 10px; /* moves the text to the right so it doesnt start at the edge of container*/
+
+}
+.duration{
+    margin-top: 0;     /* Remove vertical space between job title and job duation text  */
+    margin-bottom: 0;  /* Remove bottom margin to bring text closer together  */
+    margin-left: 10px; /* moves the text to the right so it doesnt start at the edge of container*/
+    font-style: italic; 
+    text-decoration: underline;
+    color: gray;
+
+}
+.school{
+    margin-top: 0;     /* Remove vertical space between school name and grad date text  */
+    margin-bottom: 0;  /* Remove bottom margin to bring text closer together  */
+    margin-left: 10px; /* moves the text to the right so it doesnt start at the edge of container*/
+}
