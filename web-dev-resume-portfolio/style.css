@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 0px;
+    /*space between body anf container*/
+}
+
+.main-container {
+    display: flex;
+    /* Flex box property setting allows div to become a flex container*/
+    justify-content: space-between;
+    /* Space between left and right containers */
+    width: 100%;
+    /* main container will take up full width of body */
+    align-items: stretch;
+    /* flex box property that allows my container to keep growing as needed*/
+}
+
+.left-container,
+.right-container {
+    width: 50%;
+    /* Each takes up half of the main container */
+    padding: 10px;
+    /* allows space between the two containers  */
+    display: flex;
+    /* allows div class to become a flex container*/
+    flex-direction: column;
+    /*the flex items will be arranged vertically in a column layout (side by side*/
+}
+
+.profile-header {
+    display: flex;
+    /*flexbox for top header section*/
+    width: 100%;
+    /* Vertically align items in the left */
+    background-color: lightblue;
+    /*placed here so the border radius curves can show against the white body*/
+    border-radius: 10px;
+    /*slight curve on section*/
+    margin-bottom: 10px;
+
+}
+
+.profile-img img {
+    width: 200px;
+    /* Fixed width for the image */
+    height: auto;
+    border-radius: 100%;
+    /* Make the image circular */
+    margin: 10px;
+}
+
+.header-text {
+    margin-left: 20px;
+    /* Add space between the image and the rest of the header */
+}
+
+.skills,
+.education,
+.experience {
+    flex-grow: 1;
+    /* flex properties that allow these sections to grow */
+    margin-bottom: 10px;
+    /* Add margin to separate sections */
+    background-color: lightblue;
+    width: 100%;
+    border-radius: 10px
+}
+
+.section-title {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    margin-left: 10px;
+    /* moves the text to the right so it doesnt start at the edge of container*/
+
+}
+
+.job-title {
+    font-weight: bold;
+    margin-top: 0;
+    /* Remove vertical space between job title and job duation */
+    margin-bottom: 0;
+    /* Remove bottom margin */
+    margin-left: 10px;
+    /* moves the text to the right so it doesnt start at the edge of container*/
+
+}
+
+.duration {
+    margin-top: 0;
+    /* Remove vertical space between job title and job duation text  */
+    margin-bottom: 0;
+    /* Remove bottom margin to bring text closer together  */
+    margin-left: 10px;
+    /* moves the text to the right so it doesnt start at the edge of container*/
+    font-style: italic;
+    text-decoration: underline;
+    color: gray;
+
+}
+
+.school {
+    margin-top: 0;
+    /* Remove vertical space between school name and grad date text  */
+    margin-bottom: 0;
+    /* Remove bottom margin to bring text closer together  */
+    margin-left: 10px;
+    /* moves the text to the right so it doesnt start at the edge of container*/
+}
+
+#grad-date {
+    margin-top: 0;
+    /* Remove vertical space between job title and job duation text  */
+    margin-bottom: 0;
+    /* Remove bottom margin to bring text closer together  */
+    margin-left: 10px;
+    /* moves the text to the right so it doesnt start at the edge of container*/
+    font-style: italic;
+    color: gray;
+}
+
+#connect-links {
+    display: none;
+    /*hides the links element */
+}
+
+#connect-button:hover+#connect-links,
+#connect-links:hover {
+    display: block;
+    /* Show the connect links when button or links are hovered */
+}
+
+#connect-button {
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    text-decoration: underline black;
+    color: black;
+    background-color: lightblue;
+    border: 5px solid black;
+    /* Border thickness, style, and color */
+    border-radius: 5px;
+    /* Rounded corners of button*/
+
+}
+
+#resume-link {
+    /*style the link like a button */
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: black;
+    border: 5px solid black;
+    /* Border thickness, style, and color */
+    border-radius: 5px;
+    /* Rounded corners of button*/
+
+
+}
+
+#progress-container {
+    border: 1px solid black;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+#download-progress {
+    height: 100%; /* Fills the full height of the progress container */
+    width: 0%; /*  set to 0% so bars hidden until the download link is clicked */
+    background-color: green; /* Color of the progress bar */
+}
