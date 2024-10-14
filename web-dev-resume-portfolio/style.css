@@ -161,11 +161,9 @@ body {
 }
 
 #progress-container {
-    border: 1px solid black;
     height: 10px;
     width: 100%;
-    background-color: white;
-    border-radius: 5px;
+    background-color: lightblue;
     margin-top: 20px;
     margin-right: 20px;
     

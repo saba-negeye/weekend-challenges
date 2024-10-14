@@ -26,7 +26,7 @@ function askMode() {
     }
 }
 
-//animation function to slide toggle contact information button to reveal list
+//animation function to slide toggle coonnect button to reveal list
 $(document).ready(function () {
     // Toggle connect-links when connect-button is hovered
     $("#connect-button").hover(function () {
@@ -56,7 +56,7 @@ $(document).ready(function() {
         $('#download-progress').animate({ width: '100%' }, 3000, function() {
             alert("Resume has downloaded, redirecting you to a new URL")
             // After animation, open the PDF file in a new tab
-            window.open("/Users/saban/Documents/bootcamp/weekend-challenges/interactive-resume/Saba's Resume.pdf",'_blank'); // Change to your PDF URL
+            window.open("/Users/saban/Documents/bootcamp/weekend-challenges/web-dev-resume-portfolio/Saba's Resume.pdf",'_blank'); // Change to your PDF URL
         });
     });
 });
