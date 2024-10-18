@@ -1,0 +1,33 @@
+body {
+    display: flex;   /*FLEX CONTAINER*/
+    justify-content: center; /* center horizontally */
+    align-items: center;    /* center vertically */
+    height: 100vh;         /* entire height of page */   
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+     /*centers the container*/
+}
+
+.container {
+    text-align: center; /* center text  */
+    padding: 20px;    
+    border: 1px solid #ccc; 
+    border-radius: 10px; /* round corners */
+    background-color: lightBlue;
+}
+
+#search{
+    background-color: dodgerblue;
+    
+}
+#search:hover {
+    background-color: royalblue;        /* slight change button color when hover*/
+}
+
+
+#weather-info{
+    text-align: left;
+    font-weight:bold;
+}
+
